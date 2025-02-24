@@ -1,31 +1,31 @@
-#name = input("Ten: ")
-#age = input("Tuoi: ")
-#print("Xin chao "+ name +" ban "+age+" tuoi")
+# name = input("Ten: ")
+# age = input("Tuoi: ")
+# print("Xin chao "+ name +" ban "+age+" tuoi")
 
-#n =int(input("Nhap so can kiem tra:"))
-#if n%2==0:
+# n =int(input("Nhap so can kiem tra:"))
+# if n%2==0:
 #    print("Chan")
-#else:
+# else:
 #    print("Le")
 
-####### Danh sách sinh viên cơ bản #############
-#stu = []
-#while True:
+# ###### Danh sách sinh viên cơ bản #############
+# stu = []
+# while True:
 #   print("\n1. Thêm sinh viên")
 #   print("2. Xóa sinh viên")
 #    print("3. Hiển thị danh sách")
 #    print("4. Thoát")
-#    
+   
 #    choice = input("Chọn chức năng: ")
-#    
+   
 #   if choice == "1":
-#
+
 #        name = input("Nhập tên sinh viên: ")
 #        if name not in stu:
 #           stu.append(name)
 #       else:
 #           print("Tên đã tồn tại!")
-#   
+  
 #    elif choice == "2":
 #         name = input("Nhập tên sinh viên cần xóa: ")
 #         if name not in stu:
@@ -44,7 +44,7 @@
 #         print("Lựa chọn chưa hợp lệ!")
 
 
-######################Tra Cứu số điện thoại ##############################
+# #####################Tra Cứu số điện thoại ##############################
 # phone_book = {}
 # while True:
 #     print("\n1. Thêm số điện thoại")
@@ -81,7 +81,7 @@
 #         print("Lựa chọn không hợp lệ! Hãy nhập từ 1 đến 4")
 
 
-################ Tính tiền điện ####################
+# ############### Tính tiền điện ####################
 # n = int(input("Nhập số kWh:"))
 
 # if n <= 50:
@@ -98,7 +98,7 @@
 
 # print("Số tiền cần trả", ans)
 
-############IF ELSE ##############
+# ###########IF ELSE ##############
 # age = int(input("Nhập tuổi: "))
 # if age < 5 :
 #     print("Miễn phí")
@@ -110,7 +110,7 @@
 #     print("Vé người lớn: 100,000 VNĐ")
 
 
-########### For while #############
+# ########## For while #############
 # n = int(input("NHap N= "))
 # sum=0
 # for i in range(1,n+1):
@@ -179,7 +179,7 @@
 
 
 
-#####################Tính phương trình bậc 2#####################
+# ####################Tính phương trình bậc 2#####################
 # from math import sqrt
 
 # print("Giải phương trình bậc 2: ax^2+bx+c=0")
@@ -235,50 +235,50 @@
 
 
 
-##################### Mảng ##########################
-# a =[]
-# while True:
-#     print("\n   MỤC LỤC")
-#     print("1. Nhập số liệu")
-#     print("2. Xóa số liệu")
-#     print("3. Tìm số liệu")
-#     print("4. Hiển thị số liệu số liệu")
-#     print("5. Thoát")
-#     choice = input("Nhập lựa chọn: ")
+# #################### Mảng ##########################
+a =[]
+while True:
+    print("\n   MỤC LỤC")
+    print("1. Nhập số liệu")
+    print("2. Xóa số liệu")
+    print("3. Tìm số liệu")
+    print("4. Hiển thị số liệu số liệu")
+    print("5. Thoát")
+    choice = input("Nhập lựa chọn: ")
     
-#     if choice == "1":
-#         n = int(input("Nhập kích thước cần thêm vào : "))
-#         x = 1
-#         for i in range (0,n):
-#             tmp = input(f"Nhập giá trị thứ {x} = ")
-#             a.append(tmp)
-#             x += 1
-#         print ("Mảng thu được là",a)
+    if choice == "1":
+        n = int(input("Nhập kích thước cần thêm vào : "))
+        x = 1
+        for i in range (0,n):
+            tmp = input(f"Nhập giá trị thứ {x} = ")
+            a.append(tmp)
+            x += 1
+        print ("Mảng thu được là",a)
 
-#     elif choice =="2":
-#         n = int(input("Xóa phần tử số : "))
-#         if n <len(a):
-#             print ("Mảng ban đầu là",a)
-#             a.pop(n)
-#             print ("Mảng sau xóa là",a)
-#         else :
-#             print("Stt nằm ngoài phạm vi của mảng")
-#     elif choice =="3":
-#         n = int(input("Nhập vị trí cần tìm : "))
-#         if n <len(a):
-#             tmp =a[n]
-#             print(f"Giá trị cần tìm là : {tmp}")
-#             print ("Trong ",a)
-#         else :
-#             print("Stt nằm ngoài phạm vi của mảng")
+    elif choice =="2":
+        n = int(input("Xóa phần tử số : "))
+        if n <len(a):
+            print ("Mảng ban đầu là",a)
+            a.pop(n)
+            print ("Mảng sau xóa là",a)
+        else :
+            print("Stt nằm ngoài phạm vi của mảng")
+    elif choice =="3":
+        n = int(input("Nhập vị trí cần tìm : "))
+        if n <len(a):
+            tmp =a[n]
+            print(f"Giá trị cần tìm là : {tmp}")
+            print ("Trong ",a)
+        else :
+            print("Stt nằm ngoài phạm vi của mảng")
         
-#     elif choice =="4":
-#         print(a)
+    elif choice =="4":
+        print(a)
         
-#     elif choice =="5" :
-#         break
+    elif choice =="5" :
+        break
     
-#     else :
-#         print("Chỉ nhập 1-5")
+    else :
+        print("Chỉ nhập 1-5")
 
 
