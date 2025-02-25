@@ -236,49 +236,82 @@
 
 
 # #################### Mảng ##########################
-a =[]
-while True:
-    print("\n   MỤC LỤC")
-    print("1. Nhập số liệu")
-    print("2. Xóa số liệu")
-    print("3. Tìm số liệu")
-    print("4. Hiển thị số liệu số liệu")
-    print("5. Thoát")
-    choice = input("Nhập lựa chọn: ")
+# a =[]
+# while True:
+#     print("\n   MỤC LỤC")
+#     print("1. Nhập số liệu")
+#     print("2. Xóa số liệu")
+#     print("3. Tìm số liệu")
+#     print("4. Hiển thị số liệu số liệu")
+#     print("5. Thoát")
+#     choice = input("Nhập lựa chọn: ")
     
-    if choice == "1":
-        n = int(input("Nhập kích thước cần thêm vào : "))
-        x = 1
-        for i in range (0,n):
-            tmp = input(f"Nhập giá trị thứ {x} = ")
-            a.append(tmp)
-            x += 1
-        print ("Mảng thu được là",a)
+#     if choice == "1":
+#         n = int(input("Nhập kích thước cần thêm vào : "))
+#         x = 1
+#         for i in range (0,n):
+#             tmp = input(f"Nhập giá trị thứ {x} = ")
+#             a.append(tmp)
+#             x += 1
+#         print ("Mảng thu được là",a)
 
-    elif choice =="2":
-        n = int(input("Xóa phần tử số : "))
-        if n <len(a):
-            print ("Mảng ban đầu là",a)
-            a.pop(n)
-            print ("Mảng sau xóa là",a)
-        else :
-            print("Stt nằm ngoài phạm vi của mảng")
-    elif choice =="3":
-        n = int(input("Nhập vị trí cần tìm : "))
-        if n <len(a):
-            tmp =a[n]
-            print(f"Giá trị cần tìm là : {tmp}")
-            print ("Trong ",a)
-        else :
-            print("Stt nằm ngoài phạm vi của mảng")
+#     elif choice =="2":
+#         n = int(input("Xóa phần tử số : "))
+#         if n <len(a):
+#             print ("Mảng ban đầu là",a)
+#             a.pop(n)
+#             print ("Mảng sau xóa là",a)
+#         else :
+#             print("Stt nằm ngoài phạm vi của mảng")
+#     elif choice =="3":
+#         n = int(input("Nhập vị trí cần tìm : "))
+#         if n <len(a):
+#             tmp =a[n]
+#             print(f"Giá trị cần tìm là : {tmp}")
+#             print ("Trong ",a)
+#         else :
+#             print("Stt nằm ngoài phạm vi của mảng")
         
-    elif choice =="4":
-        print(a)
+#     elif choice =="4":
+#         print(a)
         
-    elif choice =="5" :
-        break
+#     elif choice =="5" :
+#         break
     
-    else :
-        print("Chỉ nhập 1-5")
+#     else :
+#         print("Chỉ nhập 1-5")
+
+# a = [1,2,9,4,5]
+# n = len(a)
+# max = 0
+# i = 0
+# while i < n :
+#     if a[i] > max:
+#         max = a[i]
+#     i = i + 1
+# # print (max)
+
+# file = open("test.txt","w")
+# file.write("Test 1")
+# file.write("Test 2")
+# file.close
+
+# def giaithua(n):
+#     if n == 0:
+#         return 1
+#     return n*giaithua(n-1)
+# print(giaithua(100))
+
+# def printMax(a, b):
+#     if a ==b:
+#         return a
+#     elif a > b:
+#         return a
+#     else:
+#         return b
+
+# a = int(input("Nhap a ="))
+# b = int(input("Nhap b ="))
+# print("So lo hon la:",printMax(a,b))
 
 
